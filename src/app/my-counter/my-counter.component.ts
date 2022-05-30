@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { decrement, increment, reset } from '../counter.actions';
+import { decrement, increment, multiply2, reset } from '../counter.actions';
 
 @Component({
   selector: 'app-my-counter',
@@ -27,6 +27,9 @@ export class MyCounterComponent implements OnInit {
   }
   reset():void{
     this.store.dispatch(reset());
+  }
+  multiply2():void{
+    this.store.dispatch(multiply2());
   }
 
 }
