@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "ngrx-counter"
+  "defaultProject": "ngrx-counter",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
